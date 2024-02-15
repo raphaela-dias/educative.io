@@ -2,7 +2,7 @@
 
 > Status: In progress
 
-Exercises and projects done for Educative.io courses.
+Exercises and projects done for Educative.io courses
 
 Courses:
 
