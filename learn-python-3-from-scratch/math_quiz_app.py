@@ -1,16 +1,35 @@
+def print_question(n1, op, n2):
+    question = print(f"\n{n1} {op} {n2} = ?")
+    return(question)
+
+def answer_feedback(user_answer, correct_answer):
+    print(f"Your answer was {user_answer}.")
+    print(f"The correct answer is {correct_answer}.")
+
+n1 = 10
+n2 = 5
+
 user_name = input("Please, insert your name: ")
 
 print(f"Hi {user_name}! Welcome to the math quiz.")
 print(f"{user_name}, can you answer the following questions?")
 
-answer1 = input("8 * 7 = ")
-print(f"The right answer is {8 * 7}.")
+print_question(n1, "+", n2)
+user_answer = input()
+correct_answer = n1 + n2
+answer_feedback(user_answer, correct_answer)
 
-answer2 = input("9 + 8 = ")
-print(f"The right answer is {9 + 8}.")
+print_question(n1, "-", n2)
+user_answer = input()
+correct_answer = n1 - n2
+answer_feedback(user_answer, correct_answer)
 
-answer3 = input("2 - 7 = ")
-print(f"The right answer is {2 - 7}.")
+print_question(n1, "*", n2)
+user_answer = input()
+correct_answer = n1 * n2
+answer_feedback(user_answer, correct_answer)
 
-answer4 = input("14 / 7 = ")
-print(f"The right answer is {int(14 / 7)}.")
+print_question(n1, "/", n2)
+user_answer = input()
+correct_answer = int(n1 / n2)
+answer_feedback(user_answer, correct_answer)
