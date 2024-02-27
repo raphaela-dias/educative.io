@@ -8,6 +8,6 @@ Courses:
 
 Python for Programmers
 
-> Sataus: Done
+> Status: Done
 
 Learn Python 3 from Scratch
