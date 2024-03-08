@@ -1,21 +1,18 @@
-def check_balance(brackets, open_brackets, close_brackets):
+def check_balance(brackets):
+    check = 0
+    for bracket in brackets:
+        if bracket == '[':
+            check += 1
 
-    if brackets[0] == ']' or brackets[-1] == '[':
-        return False
-    else:
-        for i in range(1, (len(brackets)) - 1):
-            if brackets[i] == '[':
-                open_brackets += 1
-            else:
-                close_brackets += 1
+        elif bracket == ']':
+            check -= 1
 
-        if open_brackets == close_brackets:
-            return True
-        else:
-            return False
+        if check < 0:
+            break
 
-open_brackets = 0
-close_brackets = 0
-bracket_string = '[[[[][]]]'
+    return check == 0
 
-print(check_balance(bracket_string, open_brackets, close_brackets))
+
+bracket_string = '[[]][[]]'
+
+print(check_balance(bracket_string))
