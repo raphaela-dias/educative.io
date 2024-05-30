@@ -29,6 +29,6 @@ def check_balance(brackets):
     else:
         return False
 
-bracket_string = '[]][][[]'
+bracket_string = '[[[][]]][[]]'
 
 print(check_balance(bracket_string))
